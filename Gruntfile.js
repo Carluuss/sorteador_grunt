@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         },
         replace: {
             dev: {
-                option: {
+                options: {
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
@@ -50,10 +50,10 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-                option: {
+                options: {
                     patterns: [
                         {
-                            match: "ENDERECO_DO_CSS",
+                            match: 'ENDERECO_DO_CSS',
                             replacement: './styles/main.min.css'
                         },
                         {
